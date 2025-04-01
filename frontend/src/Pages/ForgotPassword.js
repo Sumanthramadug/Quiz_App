@@ -13,7 +13,7 @@ const ForgotPassword = () => {
 
   const resetPassword = async () => {
     try {
-      const { data } = await axios.post("http://localhost:7000/api/auth/forgotPassword", { email }, { withCredentials: true });
+      const { data } = await axios.post("https://quiz-app-es5n.onrender.com/api/auth/forgotPassword", { email }, { withCredentials: true });
       if (data.success) {
         toast.success(data.message);
         setShowOtpField(true); 
@@ -27,7 +27,7 @@ const ForgotPassword = () => {
 
   const checkOtp = async () => {
     try {
-      const { data } = await axios.post("http://localhost:7000/api/auth/verifyForgotPassword", { email, otp }, { withCredentials: true });
+      const { data } = await axios.post("https://quiz-app-es5n.onrender.com/api/auth/verifyForgotPassword", { email, otp }, { withCredentials: true });
       if (data.success) {
         toast.success(data.message);
         navigate("/newPassword", { state: { email } });
