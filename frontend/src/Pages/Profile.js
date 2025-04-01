@@ -23,7 +23,7 @@ const Profile = () => {
     try {
       setLoading(true);
       const { data } = await axios.put(
-        "http://localhost:7000/api/auth/updateProfile",
+        "https://quiz-app-es5n.onrender.com/api/auth/updateProfile",
         { name, email },
         { withCredentials: true }
       );
