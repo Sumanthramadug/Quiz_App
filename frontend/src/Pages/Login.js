@@ -21,7 +21,7 @@ const Login = () => {
     axios.defaults.withCredentials = true
     if(state === 'SignUp'){
         try{
-          const {data} = await axios.post('http://localhost:7000/api/auth/register',{name,email,password},{withCredentials:true});
+          const {data} = await axios.post('https://quiz-app-es5n.onrender.com/api/auth/register',{name,email,password},{withCredentials:true});
           if(data.success){
             toast.success("User Registered Successful");
             setIsLoggedIn(true);
@@ -37,7 +37,7 @@ const Login = () => {
     }
     else{
       try{
-        const {data} = await axios.post('http://localhost:7000/api/auth/login',{email,password},{withCredentials:true});
+        const {data} = await axios.post('https://quiz-app-es5n.onrender.com/api/auth/login',{email,password},{withCredentials:true});
         if(data.success){
           toast.success("User LoggedIn Successful");
           setIsLoggedIn(true);
