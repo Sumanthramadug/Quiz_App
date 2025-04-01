@@ -1,0 +1,133 @@
+/* QuizComponent.css */
+
+/* Main Quiz Container */
+.quiz-container {
+    background-color: #1e293b;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    color: #a5b4fc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Quiz Header */
+  .quiz-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+  }
+  
+  .quiz-header p {
+    font-size: 14px;
+    color: #818cf8;
+  }
+  
+  /* Question Styling */
+  .quiz-question h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: white;
+  }
+  
+  /* Quiz Options */
+  .quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .quiz-option {
+    background-color: #333a5c;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .quiz-option:hover {
+    background-color: #6366f1;
+  }
+  
+  .quiz-option.selected {
+    background-color: #4f46e5;
+  }
+  
+  /* Quiz Footer */
+  .quiz-footer {
+    margin-top: 20px;
+  }
+  
+  .quiz-submit {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #6366f1, #312e81);
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .quiz-submit:hover {
+    background: linear-gradient(to right, #4f46e5, #1e1b4b);
+  }
+  
+  /* Quiz Results */
+  .quiz-results {
+    color: white;
+  }
+  
+  .quiz-results h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .quiz-results p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-restart {
+    padding: 10px 20px;
+    background-color: #f56b2a;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .quiz-restart:hover {
+    background-color: #d45f1d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 640px) {
+    .quiz-container {
+      width: 90%;
+    }
+  
+    .quiz-header h2 {
+      font-size: 20px;
+    }
+  
+    .quiz-question h3 {
+      font-size: 16px;
+    }
+  
+    .quiz-option {
+      font-size: 14px;
+    }
+  
+    .quiz-submit {
+      font-size: 14px;
+    }
+  }
+  
