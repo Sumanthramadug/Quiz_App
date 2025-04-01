@@ -9,23 +9,23 @@ import axios from 'axios';
 const Navbar = () => {
   const navigate = useNavigate();
   const {userData,setIsLoggedIn,setUserData} = useContext(AppContext);
-  const logout = async()=>{
-    try{
-      const {data} = await axios.post('https://quiz-app-es5n.onrender.com/api/auth/logout',{},{withCredentials:true});
-      if(data.success){
-        setIsLoggedIn(false);
-        setUserData(false);
-        navigate("/");
-        toast.success(data.message);
-      }
-      else{
-        toast.error(data.message);
-      }
-    }
-    catch(error){
-      toast.error(error.mesage);
-    }
-  }
+  // const logout = async()=>{
+  //   try{
+  //     const {data} = await axios.post('https://quiz-app-es5n.onrender.com/api/auth/logout',{},{withCredentials:true});
+  //     if(data.success){
+  //       setIsLoggedIn(false);
+  //       setUserData(false);
+  //       navigate("/");
+  //       toast.success(data.message);
+  //     }
+  //     else{
+  //       toast.error(data.message);
+  //     }
+  //   }
+  //   catch(error){
+  //     toast.error(error.mesage);
+  //   }
+  // }
   return (
     <div className="Navbar">
       <img src = {logo_light} alt="" className="logo" />
