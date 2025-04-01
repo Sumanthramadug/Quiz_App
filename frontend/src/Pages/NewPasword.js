@@ -26,7 +26,7 @@ const NewPassword = () => {
     }
 
     try {
-      const { data } = await axios.post('http://localhost:7000/api/auth/changePassword', {
+      const { data } = await axios.post('https://quiz-app-es5n.onrender.com/api/auth/changePassword', {
         email,
         password,
         confirmPassword
