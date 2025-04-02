@@ -11,7 +11,7 @@ const Navbar = () => {
   const {userData,setIsLoggedIn,setUserData} = useContext(AppContext);
   // const logout = async()=>{
   //   try{
-  //     const {data} = await axios.post('https://quiz-app-es5n.onrender.com/api/auth/logout',{},{withCredentials:true});
+  //     const {data} = await axios.post('https://quiz-app-4-06sl.onrender.com/api/auth/logout',{},{withCredentials:true});
   //     if(data.success){
   //       setIsLoggedIn(false);
   //       setUserData(false);
