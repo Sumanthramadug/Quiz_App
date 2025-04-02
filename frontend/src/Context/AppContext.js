@@ -8,7 +8,7 @@ export const AppContextProvider = (props) => {
     const [userData,setUserData] = useState(false);
     const getUserData = async() => {
         try{
-            const {data} = await axios.get('https://quiz-app-es5n.onrender.com/api/auth/getDetails',{},{withCredentials:true});
+            const {data} = await axios.get('https://quiz-app-4-06sl.onrender.com/api/auth/getDetails',{},{withCredentials:true});
             if(data.success){
                 setUserData(data.message);
             } 
